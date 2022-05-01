@@ -14,7 +14,6 @@ const Main = ({ children, router }: MainProps) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Maurício Pinto | Homepage</title>
       </Head>
 
       <Navbar path={router.asPath} />
