@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import Layout from '../components/layouts/article';
 import {
   Box,
   Heading,
@@ -10,17 +11,19 @@ import {
 
 const NotFound = () => {
   return (
-    <Container>
-      <Heading as="h1">Não encontrada</Heading>
-      <Text>A página que você está procurando não foi encontrada.</Text>
-      <Divider my={6} />
+    <Layout title="Não encontrado">
+      <Container>
+        <Heading as="h1">Não encontrada</Heading>
+        <Text>A página que você está procurando não foi encontrada.</Text>
+        <Divider my={6} />
 
-      <Box my={6} textAlign="center">
-        <NextLink href="/">
-          <Button colorScheme="teal">Retornar para a página inicial</Button>
-        </NextLink>
-      </Box>
-    </Container>
+        <Box my={6} textAlign="center">
+          <NextLink href="/">
+            <Button colorScheme="teal">Retornar para a página inicial</Button>
+          </NextLink>
+        </Box>
+      </Container>
+    </Layout>
   );
 };
 
